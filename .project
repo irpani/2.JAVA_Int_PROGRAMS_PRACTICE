@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>2.JAVA_Int_PROGRAMS_PRACTICE</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Gen_Programs/Fibonacci.png</name>
+			<type>1</type>
+			<location>C:/Users/Hi/Desktop/Naveen Java/Fibonacci.png</location>
+		</link>
+		<link>
+			<name>src/Gen_Programs/Primeno.png</name>
+			<type>1</type>
+			<location>C:/Users/Hi/Desktop/Naveen Java/Primeno.png</location>
+		</link>
+		<link>
+			<name>src/Gen_Programs/Srting Reverse.png</name>
+			<type>1</type>
+			<location>C:/Users/Hi/Desktop/Naveen Java/Srting Reverse.png</location>
+		</link>
+	</linkedResources>
+</projectDescription>
