@@ -11,7 +11,6 @@ public class Sentence_Reverse_3 {
 		 * System.out.println("Enter a Sentence"); input = scanner.nextLine();
 		 */
 		String[] words = str.split(" ");
-
 		// Now, Print the sentence in reverse order
 		System.out.println("Reversed Sentence");
 		for (int i = words.length - 1; i >= 0; i--) {

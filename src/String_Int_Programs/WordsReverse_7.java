@@ -10,7 +10,7 @@ public class WordsReverse_7 {
 				strReverse += words[i].charAt(j);
 			}
 			System.out.print(strReverse + " ");
-			strReverse = "";
+
 		}
 	}
 
