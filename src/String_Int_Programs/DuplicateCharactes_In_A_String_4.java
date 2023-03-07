@@ -4,6 +4,7 @@ public class DuplicateCharactes_In_A_String_4 {
 
 	public static void main(String argu[]) {
 		String str = "welcome to the world";
+
 		char[] ch = str.toCharArray();
 		System.out.println("The string is: " + str);
 		System.out.print("Duplicate Characters in above string are: ");

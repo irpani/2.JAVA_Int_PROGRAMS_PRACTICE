@@ -1,19 +1,13 @@
 package String_Programms;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 //Given a string S of lowercase aplhabets, check if it is isogram or not. 
 //An Isogram is a string in which no letter occurs more than once.
 
 public class Isogram {
-	public static void main(String args[]) {
-		Scanner s = new Scanner(System.in);
-		String str = s.nextLine();
-		isIso(str);
-	}
 
-	static void isIso(String str) {
+	public static boolean isIso(String str) {
 		str = str.toLowerCase();
 		int len = str.length();
 
@@ -24,10 +18,18 @@ public class Isogram {
 			if (arr[i] == arr[i + 1]) {
 				System.out.println("No");
 				break;
+
 			} else {
 				System.out.println("Yes It is Isogram");
+				return true;
 			}
 		}
+		return false;
+
+	}
+
+	public static void main(String args[]) {
+		System.out.println(isIso("Machine"));
 
 	}
 
