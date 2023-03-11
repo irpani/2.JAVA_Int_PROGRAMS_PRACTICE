@@ -4,7 +4,7 @@ package Sorting_Searhing;
  *         Divide & Conquer
  */
 
-public class MergeSort {
+public class MergeSort_7 {
 
 	public static void mergeSort(int array[], int si, int ei) {
 

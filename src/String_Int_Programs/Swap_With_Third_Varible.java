@@ -1,4 +1,4 @@
-package String_Programms;
+package String_Int_Programs;
 
 public class Swap_With_Third_Varible {
 

@@ -1,6 +1,6 @@
 package Sorting_Searhing;
 
-public class QuickSort {
+public class QuickSort_6 {
 
 	public static void quickSort(int arr[], int si, int ei) {
 		if (si >= ei) {

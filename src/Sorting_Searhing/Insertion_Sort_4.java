@@ -1,8 +1,8 @@
-package String_Programms;
+package Sorting_Searhing;
 
 import java.util.Arrays;
 
-public class vcvcv {
+public class Insertion_Sort_4 {
 
 	public static void main(String[] args) {
 		// declare an array and print the original contents

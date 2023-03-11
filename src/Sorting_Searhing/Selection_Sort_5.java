@@ -3,7 +3,7 @@ package Sorting_Searhing;
 /**
  * SelectionSort
  */
-public class Selection_Sort {
+public class Selection_Sort_5 {
 
 	public static void selectionSort(int array[]) {
 		for (int i = 0; i < array.length; i++) {

@@ -1,4 +1,4 @@
-package String_Programms;
+package String_Int_Programs;
 
 import java.util.Arrays;
 

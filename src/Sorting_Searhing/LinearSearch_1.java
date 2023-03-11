@@ -6,7 +6,7 @@ package Sorting_Searhing;
  */
 import java.util.Scanner;
 
-public class LinearSearch {
+public class LinearSearch_1 {
 
 	public static int arraySearch(int array[], int key) {
 		for (int i = 0; i < array.length; i++) {
