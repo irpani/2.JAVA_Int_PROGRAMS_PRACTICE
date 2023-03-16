@@ -1,36 +1,31 @@
 package Sorting_Searhing;
 
-import java.util.Scanner;
+public class BinarySearch_2 {
 
-class binarySearch {
-	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		int[] arr = new int[5];
-		int beg, mid, end;
-		for (int i = 0; i <= 4; i++) {
-			arr[i] = sc.nextInt();
+	public static void binarySearch(int a[]) {
+		int li = 0, hi = a.length - 1, target = 30;
+		int mid = (li + hi) / 2;
 
-		}
-		int k = sc.nextInt();
-
-		beg = 0;
-		end = arr.length - 1;
-
-		while (beg <= end) {
-			mid = (beg + end) / 2;
-
-			if (arr[mid] == k) {
-				System.out.println("Value found at: " + (mid + 1));
+		while (li <= hi) {
+			mid = (li + hi) / 2;
+			if (a[mid] < target) {
+				li = mid + 1;
+			} else if (a[mid] == target) {
+				System.out.println("Element is found at index: " + mid);
 				break;
+			} else {
+				hi = mid - 1;
 			}
-			if (k > arr[mid]) {
-				beg = mid + 1;
-			}
-			if (k < arr[mid]) {
-				end = mid - 1;
-			}
-
+			// mid = (li + hi) / 2;
 		}
+		if (li > hi) {
+			System.out.println("Element is not found!");
+		}
+	}
 
+	public static void main(String args[]) {
+		int a[] = { 10, 20, 30, 40, 50 };
+
+		binarySearch(a);
 	}
 }

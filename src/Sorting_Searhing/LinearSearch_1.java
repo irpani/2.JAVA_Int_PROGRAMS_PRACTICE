@@ -1,47 +1,32 @@
 package Sorting_Searhing;
 
-/*
- *        Linear Search
- *    -> Find the index of element in a given array.      
- */
-import java.util.Scanner;
-
 public class LinearSearch_1 {
 
-	public static int arraySearch(int array[], int key) {
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] == key) {
-				return i;
+	public static boolean Lin_search(int[] arr) {
+		int search = 5;
+		boolean flag = false;
+		for (int i = 0; i < arr.length; i++) {
+
+			if (arr[i] == search) {
+
+				flag = true;
+				System.out.println("Element is found...." + arr[i]);
+				System.exit(0);
+			} else {
+				flag = false;
+				System.out.println("Element not  found...");
+				return false;
 			}
 		}
-		return -1;
+
+		return true;
+
 	}
 
 	public static void main(String[] args) {
+		int arr[] = { 5, 8, 45, 189, 96 };
+		Lin_search(arr);
 
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("How many elements do you want to enter in the array: ");
-		int n = sc.nextInt();
-		int arr[] = new int[n];
-		System.out.print("Enter the " + n + "th elements: ");
-		for (int i = 0; i < n; i++) {
-			arr[i] = sc.nextInt();
-		}
-		System.out.print("Enter the element you want to search: ");
-		int key = sc.nextInt();
-		int index = arraySearch(arr, key);
-
-		if (index == -1) {
-			System.out.println("Element " + key + " is not found!");
-		} else {
-			System.out.println("Element " + key + " is index " + index);
-		}
 	}
-}
 
-/*
- * Output: How many elements do you want to enter in the array: 15 Enter the
- * 15th elements: 2 7 4 2 7 9 12 1 514 21 16 8 9 15 6 Enter the element you want
- * to search: 8 Element 8 is index 11
- */
+}

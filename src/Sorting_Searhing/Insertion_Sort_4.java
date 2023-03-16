@@ -1,24 +1,33 @@
 package Sorting_Searhing;
 
-import java.util.Arrays;
-
 public class Insertion_Sort_4 {
 
-	public static void main(String[] args) {
-		// declare an array and print the original contents
-		int[] a = { 10, 6, 15, 4, 1, 45 };
-		System.out.println("Original Array:" + Arrays.toString(a));
-		// apply insertion sort algorithm on the array
-		for (int i = 1; i < a.length - 1; i++) {
-			int temp = a[i];
-			int j = i - 1;
-			while (j >= 0 && temp <= a[j]) {
-				a[j + 1] = a[j];
-				j = j - 1;
+	public static void insertionSort(int a[]) {
+		int n = a.length;
+		for (int j = 1; j < n; j++) {
+			int temp = a[j];
+			int i = j - 1;
+			while ((i > -1) && (a[i] > temp)) {
+				a[i + 1] = a[i];
+				i--;
 			}
-			a[j + 1] = temp;
+			a[i + 1] = temp;
 		}
-		// print the sorted array
-		System.out.println("Sorted Array:" + Arrays.toString(a));
+	}
+
+	public static void main(String a[]) {
+		int[] arr = { 9, 14, 3, 2, 43, 11, 58, 22 };
+		System.out.println("Before Insertion Sort");
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+
+		insertionSort(arr);// sorting array using insertion sort
+
+		System.out.println("After Insertion Sort");
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
 	}
 }

@@ -15,7 +15,7 @@ public class RandomNumbers_4 {
 		 * Math.random());// 0.5398511688002571
 		 */
 		Random r = new Random();
-		int num = r.nextInt(100);
+		int num = r.nextInt(10);
 		System.out.println(num);
 	}
 
