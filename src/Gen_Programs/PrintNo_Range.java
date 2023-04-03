@@ -1,4 +1,4 @@
-package RahulSetty_Programs;
+package Gen_Programs;
 
 public class PrintNo_Range {
 

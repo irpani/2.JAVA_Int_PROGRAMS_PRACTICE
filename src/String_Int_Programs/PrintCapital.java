@@ -1,4 +1,4 @@
-package RahulSetty_Programs;
+package String_Int_Programs;
 
 import java.util.stream.Stream;
 
